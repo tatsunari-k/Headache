@@ -3,7 +3,7 @@ import UIKit
 class TutorialPageViewController: UIPageViewController {
 
     var pageControl: UIPageControl!
-    //let TutrialpageArray:[Int] = [] //チュートリアルページを番号で管理
+    //var TutrialpageArray:[Int] = [] //チュートリアルページを番号で管理
     
     
     override func viewDidLoad() {
@@ -34,14 +34,20 @@ class TutorialPageViewController: UIPageViewController {
     }
     
     func getT02() -> T02ViewController {
+                pageControl.currentPage = 1
+        print("DEBUG_PRINT: getT02\(pageControl.currentPage)")
         return storyboard!.instantiateViewController(withIdentifier: "T02ViewController") as! T02ViewController
     }
     
     func getT03() -> T03ViewController {
+               pageControl.currentPage = 2
+         print("DEBUG_PRINT: getT03\(pageControl.currentPage)")
         return storyboard!.instantiateViewController(withIdentifier: "T03ViewController") as! T03ViewController
     }
     
     func getT04() -> T04ViewController {
+                pageControl.currentPage = 3
+         print("DEBUG_PRINT: getT04\(pageControl.currentPage)")
         return storyboard!.instantiateViewController(withIdentifier: "T04ViewController") as! T04ViewController
     }
     

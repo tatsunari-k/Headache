@@ -16,6 +16,7 @@
 		8D3CBB9521E4410100220094 /* T03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CBB9421E4410100220094 /* T03ViewController.swift */; };
 		8D3CBB9721E4410F00220094 /* T04ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CBB9621E4410F00220094 /* T04ViewController.swift */; };
 		8D3CBB9921E441B600220094 /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CBB9821E441B600220094 /* TutorialPageViewController.swift */; };
+		8D3CBB9B21E4C42E00220094 /* Button_Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CBB9A21E4C42E00220094 /* Button_Custom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8D3CBB9421E4410100220094 /* T03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T03ViewController.swift; sourceTree = "<group>"; };
 		8D3CBB9621E4410F00220094 /* T04ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T04ViewController.swift; sourceTree = "<group>"; };
 		8D3CBB9821E441B600220094 /* TutorialPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPageViewController.swift; sourceTree = "<group>"; };
+		8D3CBB9A21E4C42E00220094 /* Button_Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button_Custom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				8D3CBB8121E438B600220094 /* Assets.xcassets */,
 				8D3CBB8321E438B600220094 /* LaunchScreen.storyboard */,
 				8D3CBB8621E438B600220094 /* Info.plist */,
+				8D3CBB9A21E4C42E00220094 /* Button_Custom.swift */,
 			);
 			path = project_Headache;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			files = (
 				8D3CBB9921E441B600220094 /* TutorialPageViewController.swift in Sources */,
 				8D3CBB9121E440D900220094 /* T01ViewController.swift in Sources */,
+				8D3CBB9B21E4C42E00220094 /* Button_Custom.swift in Sources */,
 				8D3CBB9321E440EE00220094 /* T02ViewController.swift in Sources */,
 				8D3CBB9721E4410F00220094 /* T04ViewController.swift in Sources */,
 				8D3CBB7B21E438B600220094 /* AppDelegate.swift in Sources */,

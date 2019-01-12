@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8304470FCF67ED700428F724 /* Pods_project_Headache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540956DDEEB59C942C649358 /* Pods_project_Headache.framework */; };
+		8D16F08F21E9B4900041D31B /* IntroductionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D16F08E21E9B4900041D31B /* IntroductionView.xib */; };
+		8D16F09121E9B51E0041D31B /* IntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D16F09021E9B51E0041D31B /* IntroductionView.swift */; };
+		8D235D3D21E788E0000C6AE4 /* HeadacheMake01_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D235D3C21E788E0000C6AE4 /* HeadacheMake01_2.swift */; };
+		8D235D3F21E78932000C6AE4 /* HeadacheMake01_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D235D3E21E78932000C6AE4 /* HeadacheMake01_1.swift */; };
 		8D3CBB7B21E438B600220094 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CBB7A21E438B600220094 /* AppDelegate.swift */; };
 		8D3CBB8021E438B600220094 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3CBB7E21E438B600220094 /* Main.storyboard */; };
 		8D3CBB8221E438B600220094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D3CBB8121E438B600220094 /* Assets.xcassets */; };
@@ -20,6 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		540956DDEEB59C942C649358 /* Pods_project_Headache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_project_Headache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BF37DCFF57C0319D32D125C /* Pods-project_Headache.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project_Headache.debug.xcconfig"; path = "Pods/Target Support Files/Pods-project_Headache/Pods-project_Headache.debug.xcconfig"; sourceTree = "<group>"; };
+		8D16F08E21E9B4900041D31B /* IntroductionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroductionView.xib; sourceTree = "<group>"; };
+		8D16F09021E9B51E0041D31B /* IntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionView.swift; sourceTree = "<group>"; };
+		8D235D3C21E788E0000C6AE4 /* HeadacheMake01_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadacheMake01_2.swift; sourceTree = "<group>"; };
+		8D235D3E21E78932000C6AE4 /* HeadacheMake01_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadacheMake01_1.swift; sourceTree = "<group>"; };
 		8D3CBB7721E438B600220094 /* project_Headache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project_Headache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3CBB7A21E438B600220094 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D3CBB7F21E438B600220094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,6 +43,7 @@
 		8D3CBB9621E4410F00220094 /* T04ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T04ViewController.swift; sourceTree = "<group>"; };
 		8D3CBB9821E441B600220094 /* TutorialPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPageViewController.swift; sourceTree = "<group>"; };
 		8D3CBB9A21E4C42E00220094 /* Button_Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button_Custom.swift; sourceTree = "<group>"; };
+		93ED34852E880D8692DBDEF0 /* Pods-project_Headache.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project_Headache.release.xcconfig"; path = "Pods/Target Support Files/Pods-project_Headache/Pods-project_Headache.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8304470FCF67ED700428F724 /* Pods_project_Headache.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +63,8 @@
 			children = (
 				8D3CBB7921E438B600220094 /* project_Headache */,
 				8D3CBB7821E438B600220094 /* Products */,
+				A73CE5493613FC2E4C741AB4 /* Pods */,
+				BBA95636015E804CDF20EDDE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				8D3CBB8F21E438FD00220094 /* New Group3 */,
-				8D3CBB8E21E438FB00220094 /* New Group2 */,
+				8D3CBB8E21E438FB00220094 /* HeadacheMakeFunc */,
 				8D3CBB8D21E438F800220094 /* New Group1 */,
 				8D3CBB8C21E438F300220094 /* Tutorial */,
 				8D3CBB7E21E438B600220094 /* Main.storyboard */,
@@ -85,6 +100,8 @@
 				8D3CBB9221E440EE00220094 /* T02ViewController.swift */,
 				8D3CBB9421E4410100220094 /* T03ViewController.swift */,
 				8D3CBB9621E4410F00220094 /* T04ViewController.swift */,
+				8D16F08E21E9B4900041D31B /* IntroductionView.xib */,
+				8D16F09021E9B51E0041D31B /* IntroductionView.swift */,
 			);
 			path = Tutorial;
 			sourceTree = "<group>";
@@ -97,11 +114,13 @@
 			path = "New Group1";
 			sourceTree = "<group>";
 		};
-		8D3CBB8E21E438FB00220094 /* New Group2 */ = {
+		8D3CBB8E21E438FB00220094 /* HeadacheMakeFunc */ = {
 			isa = PBXGroup;
 			children = (
+				8D235D3E21E78932000C6AE4 /* HeadacheMake01_1.swift */,
+				8D235D3C21E788E0000C6AE4 /* HeadacheMake01_2.swift */,
 			);
-			path = "New Group2";
+			path = HeadacheMakeFunc;
 			sourceTree = "<group>";
 		};
 		8D3CBB8F21E438FD00220094 /* New Group3 */ = {
@@ -111,6 +130,23 @@
 			path = "New Group3";
 			sourceTree = "<group>";
 		};
+		A73CE5493613FC2E4C741AB4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7BF37DCFF57C0319D32D125C /* Pods-project_Headache.debug.xcconfig */,
+				93ED34852E880D8692DBDEF0 /* Pods-project_Headache.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BBA95636015E804CDF20EDDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				540956DDEEB59C942C649358 /* Pods_project_Headache.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D3CBB8921E438B600220094 /* Build configuration list for PBXNativeTarget "project_Headache" */;
 			buildPhases = (
+				7AB80D893026B32D9451BE90 /* [CP] Check Pods Manifest.lock */,
 				8D3CBB7321E438B600220094 /* Sources */,
 				8D3CBB7421E438B600220094 /* Frameworks */,
 				8D3CBB7521E438B600220094 /* Resources */,
+				E3C303EBD981DDA1F16D699C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -172,23 +210,76 @@
 			files = (
 				8D3CBB8521E438B600220094 /* LaunchScreen.storyboard in Resources */,
 				8D3CBB8221E438B600220094 /* Assets.xcassets in Resources */,
+				8D16F08F21E9B4900041D31B /* IntroductionView.xib in Resources */,
 				8D3CBB8021E438B600220094 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7AB80D893026B32D9451BE90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-project_Headache-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3C303EBD981DDA1F16D699C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-project_Headache/Pods-project_Headache-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-project_Headache/Pods-project_Headache-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8D3CBB7321E438B600220094 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D16F09121E9B51E0041D31B /* IntroductionView.swift in Sources */,
 				8D3CBB9921E441B600220094 /* TutorialPageViewController.swift in Sources */,
+				8D235D3D21E788E0000C6AE4 /* HeadacheMake01_2.swift in Sources */,
 				8D3CBB9121E440D900220094 /* T01ViewController.swift in Sources */,
 				8D3CBB9B21E4C42E00220094 /* Button_Custom.swift in Sources */,
 				8D3CBB9321E440EE00220094 /* T02ViewController.swift in Sources */,
 				8D3CBB9721E4410F00220094 /* T04ViewController.swift in Sources */,
 				8D3CBB7B21E438B600220094 /* AppDelegate.swift in Sources */,
+				8D235D3F21E78932000C6AE4 /* HeadacheMake01_1.swift in Sources */,
 				8D3CBB9521E4410100220094 /* T03ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +415,7 @@
 		};
 		8D3CBB8A21E438B600220094 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BF37DCFF57C0319D32D125C /* Pods-project_Headache.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -339,6 +431,7 @@
 		};
 		8D3CBB8B21E438B600220094 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93ED34852E880D8692DBDEF0 /* Pods-project_Headache.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

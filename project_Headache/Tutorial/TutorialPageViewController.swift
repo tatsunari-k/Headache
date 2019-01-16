@@ -1,5 +1,8 @@
 import UIKit
 
+///////<summary>
+///////チュートリアルストーリーボードを管理。ページめくり。pagecontrolに関するコードを記述
+
 class TutorialPageViewController: UIPageViewController, UIPageViewControllerDelegate {
 
     var pageControl: UIPageControl!

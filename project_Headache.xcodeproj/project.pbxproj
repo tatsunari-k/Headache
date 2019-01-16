@@ -10,8 +10,8 @@
 		8304470FCF67ED700428F724 /* Pods_project_Headache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540956DDEEB59C942C649358 /* Pods_project_Headache.framework */; };
 		8D16F08F21E9B4900041D31B /* IntroductionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D16F08E21E9B4900041D31B /* IntroductionView.xib */; };
 		8D16F09121E9B51E0041D31B /* IntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D16F09021E9B51E0041D31B /* IntroductionView.swift */; };
-		8D235D3D21E788E0000C6AE4 /* HeadacheMake01_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D235D3C21E788E0000C6AE4 /* HeadacheMake01_2.swift */; };
-		8D235D3F21E78932000C6AE4 /* HeadacheMake01_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D235D3E21E78932000C6AE4 /* HeadacheMake01_1.swift */; };
+		8D235D3D21E788E0000C6AE4 /* HeadacheMake012.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D235D3C21E788E0000C6AE4 /* HeadacheMake012.swift */; };
+		8D235D3F21E78932000C6AE4 /* HeadacheMake011.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D235D3E21E78932000C6AE4 /* HeadacheMake011.swift */; };
 		8D3CBB7B21E438B600220094 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CBB7A21E438B600220094 /* AppDelegate.swift */; };
 		8D3CBB8021E438B600220094 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3CBB7E21E438B600220094 /* Main.storyboard */; };
 		8D3CBB8221E438B600220094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D3CBB8121E438B600220094 /* Assets.xcassets */; };
@@ -22,6 +22,17 @@
 		8D3CBB9721E4410F00220094 /* T04ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CBB9621E4410F00220094 /* T04ViewController.swift */; };
 		8D3CBB9921E441B600220094 /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CBB9821E441B600220094 /* TutorialPageViewController.swift */; };
 		8D3CBB9B21E4C42E00220094 /* Button_Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CBB9A21E4C42E00220094 /* Button_Custom.swift */; };
+		8D4CAF4221EA193000C16966 /* HeadacheMakeTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D4CAF4121EA193000C16966 /* HeadacheMakeTextView.xib */; };
+		8D4CAF4421EA196800C16966 /* HeadacheMakeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CAF4321EA196800C16966 /* HeadacheMakeTextView.swift */; };
+		8D4CAF4621EA34F700C16966 /* HeadacheMake001.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CAF4521EA34F700C16966 /* HeadacheMake001.swift */; };
+		8D70E03021E9DCF00041F466 /* UIView_Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D70E02F21E9DCF00041F466 /* UIView_Custom.swift */; };
+		8DDA56C221ECA84500070828 /* HeadacheMake013.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA56C121ECA84500070828 /* HeadacheMake013.swift */; };
+		8DDA56C421ECA89800070828 /* HeadacheMake021.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA56C321ECA89800070828 /* HeadacheMake021.swift */; };
+		8DDA56C621ECA8D600070828 /* HeadacheMake031.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA56C521ECA8D600070828 /* HeadacheMake031.swift */; };
+		8DDA56C821ECA8F300070828 /* HeadacheMakeLast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA56C721ECA8F300070828 /* HeadacheMakeLast.swift */; };
+		8DDA56CA21ECCD5400070828 /* HSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA56C921ECCD5400070828 /* HSV.swift */; };
+		8DDA56CC21ECCE1D00070828 /* ColorEdit.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DDA56CB21ECCE1D00070828 /* ColorEdit.xib */; };
+		8DDA56CE21ECCE3A00070828 /* ColorEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA56CD21ECCE3A00070828 /* ColorEdit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +40,8 @@
 		7BF37DCFF57C0319D32D125C /* Pods-project_Headache.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project_Headache.debug.xcconfig"; path = "Pods/Target Support Files/Pods-project_Headache/Pods-project_Headache.debug.xcconfig"; sourceTree = "<group>"; };
 		8D16F08E21E9B4900041D31B /* IntroductionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroductionView.xib; sourceTree = "<group>"; };
 		8D16F09021E9B51E0041D31B /* IntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionView.swift; sourceTree = "<group>"; };
-		8D235D3C21E788E0000C6AE4 /* HeadacheMake01_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadacheMake01_2.swift; sourceTree = "<group>"; };
-		8D235D3E21E78932000C6AE4 /* HeadacheMake01_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadacheMake01_1.swift; sourceTree = "<group>"; };
+		8D235D3C21E788E0000C6AE4 /* HeadacheMake012.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadacheMake012.swift; sourceTree = "<group>"; };
+		8D235D3E21E78932000C6AE4 /* HeadacheMake011.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadacheMake011.swift; sourceTree = "<group>"; };
 		8D3CBB7721E438B600220094 /* project_Headache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project_Headache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3CBB7A21E438B600220094 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D3CBB7F21E438B600220094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,6 +54,17 @@
 		8D3CBB9621E4410F00220094 /* T04ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T04ViewController.swift; sourceTree = "<group>"; };
 		8D3CBB9821E441B600220094 /* TutorialPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPageViewController.swift; sourceTree = "<group>"; };
 		8D3CBB9A21E4C42E00220094 /* Button_Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button_Custom.swift; sourceTree = "<group>"; };
+		8D4CAF4121EA193000C16966 /* HeadacheMakeTextView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeadacheMakeTextView.xib; sourceTree = "<group>"; };
+		8D4CAF4321EA196800C16966 /* HeadacheMakeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadacheMakeTextView.swift; sourceTree = "<group>"; };
+		8D4CAF4521EA34F700C16966 /* HeadacheMake001.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadacheMake001.swift; sourceTree = "<group>"; };
+		8D70E02F21E9DCF00041F466 /* UIView_Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_Custom.swift; sourceTree = "<group>"; };
+		8DDA56C121ECA84500070828 /* HeadacheMake013.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadacheMake013.swift; sourceTree = "<group>"; };
+		8DDA56C321ECA89800070828 /* HeadacheMake021.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadacheMake021.swift; sourceTree = "<group>"; };
+		8DDA56C521ECA8D600070828 /* HeadacheMake031.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadacheMake031.swift; sourceTree = "<group>"; };
+		8DDA56C721ECA8F300070828 /* HeadacheMakeLast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadacheMakeLast.swift; sourceTree = "<group>"; };
+		8DDA56C921ECCD5400070828 /* HSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSV.swift; sourceTree = "<group>"; };
+		8DDA56CB21ECCE1D00070828 /* ColorEdit.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorEdit.xib; sourceTree = "<group>"; };
+		8DDA56CD21ECCE3A00070828 /* ColorEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorEdit.swift; sourceTree = "<group>"; };
 		93ED34852E880D8692DBDEF0 /* Pods-project_Headache.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project_Headache.release.xcconfig"; path = "Pods/Target Support Files/Pods-project_Headache/Pods-project_Headache.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,15 +101,17 @@
 		8D3CBB7921E438B600220094 /* project_Headache */ = {
 			isa = PBXGroup;
 			children = (
-				8D3CBB8F21E438FD00220094 /* New Group3 */,
-				8D3CBB8E21E438FB00220094 /* HeadacheMakeFunc */,
-				8D3CBB8D21E438F800220094 /* New Group1 */,
+				8DDA56CF21EF561B00070828 /* HeadacheShape */,
+				8D3CBB8F21E438FD00220094 /* ColorEdit */,
+				8D3CBB8E21E438FB00220094 /* HeadacheMake */,
 				8D3CBB8C21E438F300220094 /* Tutorial */,
 				8D3CBB7E21E438B600220094 /* Main.storyboard */,
 				8D3CBB8121E438B600220094 /* Assets.xcassets */,
+				8D3CBB8D21E438F800220094 /* Other */,
 				8D3CBB8321E438B600220094 /* LaunchScreen.storyboard */,
 				8D3CBB8621E438B600220094 /* Info.plist */,
 				8D3CBB9A21E4C42E00220094 /* Button_Custom.swift */,
+				8D70E02F21E9DCF00041F466 /* UIView_Custom.swift */,
 			);
 			path = project_Headache;
 			sourceTree = "<group>";
@@ -106,28 +130,45 @@
 			path = Tutorial;
 			sourceTree = "<group>";
 		};
-		8D3CBB8D21E438F800220094 /* New Group1 */ = {
+		8D3CBB8D21E438F800220094 /* Other */ = {
 			isa = PBXGroup;
 			children = (
 				8D3CBB7A21E438B600220094 /* AppDelegate.swift */,
 			);
-			path = "New Group1";
+			path = Other;
 			sourceTree = "<group>";
 		};
-		8D3CBB8E21E438FB00220094 /* HeadacheMakeFunc */ = {
+		8D3CBB8E21E438FB00220094 /* HeadacheMake */ = {
 			isa = PBXGroup;
 			children = (
-				8D235D3E21E78932000C6AE4 /* HeadacheMake01_1.swift */,
-				8D235D3C21E788E0000C6AE4 /* HeadacheMake01_2.swift */,
+				8D4CAF4521EA34F700C16966 /* HeadacheMake001.swift */,
+				8D235D3E21E78932000C6AE4 /* HeadacheMake011.swift */,
+				8D235D3C21E788E0000C6AE4 /* HeadacheMake012.swift */,
+				8DDA56C121ECA84500070828 /* HeadacheMake013.swift */,
+				8DDA56C321ECA89800070828 /* HeadacheMake021.swift */,
+				8DDA56C521ECA8D600070828 /* HeadacheMake031.swift */,
+				8DDA56C721ECA8F300070828 /* HeadacheMakeLast.swift */,
+				8D4CAF4121EA193000C16966 /* HeadacheMakeTextView.xib */,
+				8D4CAF4321EA196800C16966 /* HeadacheMakeTextView.swift */,
 			);
-			path = HeadacheMakeFunc;
+			path = HeadacheMake;
 			sourceTree = "<group>";
 		};
-		8D3CBB8F21E438FD00220094 /* New Group3 */ = {
+		8D3CBB8F21E438FD00220094 /* ColorEdit */ = {
+			isa = PBXGroup;
+			children = (
+				8DDA56C921ECCD5400070828 /* HSV.swift */,
+				8DDA56CB21ECCE1D00070828 /* ColorEdit.xib */,
+				8DDA56CD21ECCE3A00070828 /* ColorEdit.swift */,
+			);
+			path = ColorEdit;
+			sourceTree = "<group>";
+		};
+		8DDA56CF21EF561B00070828 /* HeadacheShape */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "New Group3";
+			path = HeadacheShape;
 			sourceTree = "<group>";
 		};
 		A73CE5493613FC2E4C741AB4 /* Pods */ = {
@@ -212,6 +253,8 @@
 				8D3CBB8221E438B600220094 /* Assets.xcassets in Resources */,
 				8D16F08F21E9B4900041D31B /* IntroductionView.xib in Resources */,
 				8D3CBB8021E438B600220094 /* Main.storyboard in Resources */,
+				8D4CAF4221EA193000C16966 /* HeadacheMakeTextView.xib in Resources */,
+				8DDA56CC21ECCE1D00070828 /* ColorEdit.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,15 +266,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-project_Headache-checkManifestLockResult.txt",
 			);
@@ -245,16 +284,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-project_Headache/Pods-project_Headache-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
@@ -273,14 +308,23 @@
 			files = (
 				8D16F09121E9B51E0041D31B /* IntroductionView.swift in Sources */,
 				8D3CBB9921E441B600220094 /* TutorialPageViewController.swift in Sources */,
-				8D235D3D21E788E0000C6AE4 /* HeadacheMake01_2.swift in Sources */,
+				8D4CAF4421EA196800C16966 /* HeadacheMakeTextView.swift in Sources */,
+				8D235D3D21E788E0000C6AE4 /* HeadacheMake012.swift in Sources */,
+				8D4CAF4621EA34F700C16966 /* HeadacheMake001.swift in Sources */,
+				8DDA56C621ECA8D600070828 /* HeadacheMake031.swift in Sources */,
 				8D3CBB9121E440D900220094 /* T01ViewController.swift in Sources */,
 				8D3CBB9B21E4C42E00220094 /* Button_Custom.swift in Sources */,
+				8DDA56CE21ECCE3A00070828 /* ColorEdit.swift in Sources */,
 				8D3CBB9321E440EE00220094 /* T02ViewController.swift in Sources */,
 				8D3CBB9721E4410F00220094 /* T04ViewController.swift in Sources */,
 				8D3CBB7B21E438B600220094 /* AppDelegate.swift in Sources */,
-				8D235D3F21E78932000C6AE4 /* HeadacheMake01_1.swift in Sources */,
+				8D235D3F21E78932000C6AE4 /* HeadacheMake011.swift in Sources */,
+				8DDA56CA21ECCD5400070828 /* HSV.swift in Sources */,
+				8DDA56C421ECA89800070828 /* HeadacheMake021.swift in Sources */,
 				8D3CBB9521E4410100220094 /* T03ViewController.swift in Sources */,
+				8DDA56C821ECA8F300070828 /* HeadacheMakeLast.swift in Sources */,
+				8DDA56C221ECA84500070828 /* HeadacheMake013.swift in Sources */,
+				8D70E03021E9DCF00041F466 /* UIView_Custom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

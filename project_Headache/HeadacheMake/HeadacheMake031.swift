@@ -1,7 +1,13 @@
 import UIKit
 
-class HeadacheMake01_2: UIViewController {
+///////<summary>
+///////頭痛の形を決めるページ。
 
+class HeadacheMake031: UIViewController {
+
+    var headMakeNo031 : String! = ""
+    var headMakeText031 : String! = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -11,6 +17,5 @@ class HeadacheMake01_2: UIViewController {
         super.didReceiveMemoryWarning()
     
     }
-    
 
 }

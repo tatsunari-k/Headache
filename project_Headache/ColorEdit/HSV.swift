@@ -2,6 +2,9 @@ import UIKit
 
 //h//ttps://blog.ch3cooh.jp/entry/20160829/1472432400
 //
+////<summary>
+////RGBからHSVへ値を変換するクラスと関数。
+//HSVにて
 class HSV {
     //色相
     var hue: Double = 0

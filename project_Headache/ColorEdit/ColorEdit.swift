@@ -1,14 +1,51 @@
 import UIKit
 
-////〈summary〉
+////〈summary〉////////////////////////////////////////////////////////////////////////
 ////スライドバーで色彩・彩度・明度を調整する/////
 @IBDesignable
 class ColorEdit: UIView {
+    
+    var hueEdit : Float = 0.0
+    var saturationEdit : Float = 0.0
+    var brightnessEdit : Float = 0.0
+    var hsvControl : HSV?
+    var headacheMake021 : HeadacheMake021?
     
     @IBOutlet weak var hueEditSlider: UISlider!
     @IBOutlet weak var saturationEditSlider: UISlider!
     @IBOutlet weak var brightnessEditSlider: UISlider!
     
+    @IBAction func hueEditSliderAct(_ sender: Any) {
+        hueEdit = hueEditSlider.value
+        print("DEBUG_PRINT: \(hueEditSlider.value)")
+        print("DEBUG_PRINT: \(hueEdit)")
+        
+        //hsvControl.fromRGB(red: Int, green: Int, blue: Int){
+        //}
+        headacheMake021?.headacheImg021.tintColor = UIColor.rgb(r:Int(hueEditSlider.value), g: 0, b: 0, alpha: 0.5)
+    
+        
+    }
+    
+    @IBAction func saturationEditAct(_ sender: Any) {
+        saturationEdit = saturationEditSlider.value
+        print("DEBUG_PRINT: \(saturationEditSlider.value)")
+        print("DEBUG_PRINT: \(saturationEdit)")
+    }
+    
+    @IBAction func brightnessEditAct(_ sender: Any) {
+        brightnessEdit = brightnessEditSlider.value
+        print("DEBUG_PRINT: \(brightnessEditSlider.value)")
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //initは、シミュレータや実機など実際にiOS上のアプリで実行する時の処理
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -30,6 +67,27 @@ class ColorEdit: UIView {
         addSubview(ColorEditNib)
     }
 }
+
+
+//h//ttps://teratail.com/questions/150676
+//hueEditSlider.transform = CGAffineTransform(scaleX: 2, y: 2)//
+
+////////////////////////////////////////////////////////////////////////
+////h/ttps://qiita.com/KikurageChan/items/7cd958576d4f939f321f
+////h/ttps://qiita.com/ruwatana/items/01a9c43057f71560580f
+//sliderのUX向上。タッチで値を変更可能にする。
+//func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+// thumbのrectを算出する
+//let thumbRect = self.thumbRect(
+//    forBounds: bounds,
+//    trackRect: trackRect(forBounds: bounds), // バー(track)のrect
+//    value: value
+//)
+// tapした座標
+//let tapPoint = touch.location(in: self)
+// tapした座標がthumbの矩形内に含まれていれば調節開始する
+//return thumbRect.contains(tapPoint)
+//}
 
     
 

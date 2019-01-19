@@ -72,7 +72,7 @@ class TutorialPageViewController: UIPageViewController, UIPageViewControllerDele
         
         //tutorial終了ボタン
         closeBtn = UIButton()
-        closeBtn.frame = CGRect(x:10,y:10,width:50,height:50)
+        closeBtn.frame = CGRect(x:10,y:20,width:80,height:80)
         closeBtn.setTitle("×", for: .normal)
         closeBtn.addTarget(self,action:#selector(TutorialPageViewController.closeBtnTapped(sender:)),for:.touchUpInside)
         self.view.addSubview(closeBtn)

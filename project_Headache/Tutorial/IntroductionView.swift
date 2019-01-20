@@ -49,7 +49,8 @@ class IntroductionView: UIView {
         gradientLayer = CAGradientLayer()
         gradientLayer!.colors = [topColor.cgColor, bottomColor.cgColor]
         gradientLayer!.frame.size = frame.size
-        layer.addSublayer(gradientLayer!)
+        layer.insertSublayer(gradientLayer!, at: 0)
+        //layer.addSublayer(gradientLayer!)　←エラー対処前
         layer.masksToBounds = true
     }
     

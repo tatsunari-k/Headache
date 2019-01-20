@@ -1,5 +1,8 @@
 import UIKit
 
+protocol ColorEditDelegate: class {
+    func changeImageViewColor(color: UIColor)
+}
 ////〈summary〉////////////////////////////////////////////////////////////////////////
 ////スライドバーで色彩・彩度・明度を調整する/////
 @IBDesignable
@@ -10,6 +13,7 @@ class ColorEdit: UIView {
     var brightnessEdit : Float = 0.0
     var hsvControl : HSV?
     var headacheMake021 : HeadacheMake021?
+    var colorEditDelegate: ColorEditDelegate?
     
     @IBOutlet weak var hueEditSlider: UISlider!
     @IBOutlet weak var saturationEditSlider: UISlider!
@@ -19,10 +23,16 @@ class ColorEdit: UIView {
         hueEdit = hueEditSlider.value
         print("DEBUG_PRINT: \(hueEditSlider.value)")
         print("DEBUG_PRINT: \(hueEdit)")
+        headacheMake021 = HeadacheMake021()
         
-        //hsvControl.fromRGB(red: Int, green: Int, blue: Int){
-        //}
-        headacheMake021?.headacheImg021.tintColor = UIColor.rgb(r:Int(hueEditSlider.value), g: 0, b: 0, alpha: 0.5)
+        //HeadacheMake021何にあるheadacheImg021の値を取得して変換する必要あり。
+        //hsvControl = HSV.fromRGB(red: 0, green: 255, blue: 0)
+        
+        colorEditDelegate?.changeImageViewColor(color: UIColor.hsb(h:Int(hueEditSlider.value), s:Int(saturationEditSlider.value), b:Int(brightnessEditSlider.value), alpha: 1))
+        
+        //delegate?.changeImageViewColor(color: UIColor.rgb(r:Int(hueEditSlider.value), g:Int(saturationEditSlider.value), b:0, alpha: 1))
+        //hsvControl = HSV.fromRGB(red: 0, green: 255, blue: 0)
+        //headacheMake021?.headacheImg021.tintColor = UIColor.rgb(r:Int(hueEditSlider.value), g: 0, b: 0, alpha: 0.5)
     
         
     }
@@ -31,11 +41,16 @@ class ColorEdit: UIView {
         saturationEdit = saturationEditSlider.value
         print("DEBUG_PRINT: \(saturationEditSlider.value)")
         print("DEBUG_PRINT: \(saturationEdit)")
+        
+        colorEditDelegate?.changeImageViewColor(color: UIColor.hsb(h:Int(hueEditSlider.value), s:Int(saturationEditSlider.value), b:Int(brightnessEditSlider.value), alpha: 1))
+        
     }
     
     @IBAction func brightnessEditAct(_ sender: Any) {
         brightnessEdit = brightnessEditSlider.value
         print("DEBUG_PRINT: \(brightnessEditSlider.value)")
+        
+        colorEditDelegate?.changeImageViewColor(color: UIColor.hsb(h:Int(hueEditSlider.value), s:Int(saturationEditSlider.value), b:Int(brightnessEditSlider.value), alpha: 1))
         
     }
     

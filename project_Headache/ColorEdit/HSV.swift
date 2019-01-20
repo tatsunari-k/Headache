@@ -17,7 +17,7 @@ class HSV {
         self.hue = hue
         self.saturation = saturation
         self.value = value
-}
+    }
 
     class func fromRGB(red: Int, green: Int, blue: Int) -> HSV {
         // R、GおよびBが0.0を最小量、1.0を最大値とする0.0から1.0の範囲にある

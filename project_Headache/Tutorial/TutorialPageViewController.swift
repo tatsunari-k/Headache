@@ -3,12 +3,14 @@ import UIKit
 ///////<summary>
 ///////チュートリアルストーリーボードを管理。ページめくり。pagecontrolに関するコードを記述
 
+
 class TutorialPageViewController: UIPageViewController, UIPageViewControllerDelegate {
 
     var pageControl: UIPageControl!
     var closeBtn:UIButton!
     //var TutrialpageArray:[Int] = [] //チュートリアルページを番号で管理
     
+    /////表示しているviewcintrollerからスクロールで画面変更を可能にする。
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setViewControllers([getT01()], direction: .forward, animated: true, completion: nil)
@@ -16,6 +18,7 @@ class TutorialPageViewController: UIPageViewController, UIPageViewControllerDele
         self.delegate = self
     }
 
+    /////ページをスラウドする関数。各関数でどのViewControllerに遷移するかを定義
     func getT01() -> T01ViewController {
         return storyboard!.instantiateViewController(withIdentifier: "T01ViewController") as! T01ViewController
     }
@@ -30,7 +33,7 @@ class TutorialPageViewController: UIPageViewController, UIPageViewControllerDele
     }
     
     ///////
-    /////
+    /////表示しているviewcintrollerからスクロールで画面変更を可能にする。
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool)
     {
         if (!completed)

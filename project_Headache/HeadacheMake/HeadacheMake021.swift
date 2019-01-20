@@ -6,21 +6,31 @@ import UIKit
 
 class HeadacheMake021: UIViewController {
 
-    var headMakeNo021 : String! = ""
-    var headMakeText021 : String! = ""
-
+    @IBOutlet weak var headMake021View: HeadacheMakeTextView!
     @IBOutlet weak var headacheImg021: UIImageView!
     @IBOutlet weak var colorEditNib: ColorEdit!
+    var headMakeNo021 : String! = ""//ページ番号
+    var headMakeText021 : String! = ""//ページ説明テキスト
+
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        headMakeNo021 = "２"
+        headMakeText021 = "あなたの頭痛は\n何色をしていますか？"
+        
+        headMake021View.headMakeNo.text = headMakeNo021
+        headMake021View.headMakeText.text = headMakeText021
+        
 //        hueEdit = colorEditNib.hueEditSlider.value
 //        saturationEdit = colorEditNib.saturationEditSlider.value
 //        brightnessEdit = colorEditNib.brightnessEditSlider.value
 //        
 //        print("DEBUG_PRINT: HeadacheMake021\(hueEdit)")
+            self.colorEditNib.colorEditDelegate = self
         
+            headacheImg021.image = headacheImg021.image?.withRenderingMode(.alwaysTemplate)
             // 角丸設定
             self.colorEditNib.layer.cornerRadius = 12
             
@@ -36,5 +46,11 @@ class HeadacheMake021: UIViewController {
         }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+}
+
+extension HeadacheMake021: ColorEditDelegate {
+    func changeImageViewColor(color: UIColor) {
+        headacheImg021.tintColor = color
     }
 }

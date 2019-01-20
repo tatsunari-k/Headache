@@ -6,15 +6,18 @@ import UIKit
 class HeadacheMake001: UIViewController {
     
     
-    var headMakeNo00 : String! = ""
-    var headMakeText00 : String! = ""
+    var headMakeNo001 : String! = ""
+    var headMakeText001 : String! = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        headMakeNo00 = "１"
-        headMakeText00 = "あなたの頭痛は\nどこにありますか？\n右?　左?"
+        headMakeNo001 = "１"
+        headMakeText001 = "リラックスして繰り返し\n頭痛をイメージしてみてください"
         
-        print("DEBUG_PRINT: \(headMakeText00)")
+        //headMake001View.headMakeNo.text = headMakeNo001
+        //headMake001View.headMakeText.text = headMakeText001
+        
+        print("DEBUG_PRINT: \(headMakeText001)")
         
     }
     

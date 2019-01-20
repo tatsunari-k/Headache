@@ -40,4 +40,9 @@ extension UIColor {
     class func rgb(r: Int, g: Int, b: Int, alpha: CGFloat) -> UIColor{
         return UIColor(red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b) / 255.0, alpha: alpha)
     }
+    
+    //HSBからUIColorを返す。
+    class func hsb(h: Int, s: Int, b: Int, alpha: CGFloat) -> UIColor{
+        return UIColor(hue: CGFloat(h) / 260.0, saturation: CGFloat(s) / 100.0,  brightness: CGFloat(b) / 100.0, alpha: alpha)
+    }
 }

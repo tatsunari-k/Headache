@@ -22,13 +22,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tK-Gc-NpC">
-                    <rect key="frame" x="145" y="20" width="11" height="30"/>
+                    <rect key="frame" x="145" y="30" width="11" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJi-R7-3aT">
-                    <rect key="frame" x="76.5" y="60" width="147" height="76.5"/>
+                    <rect key="frame" x="76.5" y="70" width="147" height="76.5"/>
                     <string key="text">あなたの頭痛は
 どこにありますか？
 
@@ -38,12 +38,11 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="0.0" green="0.46274509800000002" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="7tK-Gc-NpC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EPj-1H-2vi"/>
                 <constraint firstItem="RJi-R7-3aT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ff9-d8-C48"/>
                 <constraint firstItem="RJi-R7-3aT" firstAttribute="top" secondItem="7tK-Gc-NpC" secondAttribute="bottom" constant="10" id="ji3-J8-FEv"/>
-                <constraint firstItem="7tK-Gc-NpC" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="kTz-ux-5ot"/>
+                <constraint firstItem="7tK-Gc-NpC" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="kTz-ux-5ot"/>
                 <constraint firstItem="RJi-R7-3aT" firstAttribute="top" secondItem="7tK-Gc-NpC" secondAttribute="bottom" constant="10" id="zQd-0e-UbA"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

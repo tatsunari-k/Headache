@@ -8,6 +8,8 @@ class HeadacheMake013: UIViewController {
     @IBOutlet weak var headMake013View: HeadacheMakeTextView!
     var headMakeNo013 : String! = ""
     var headMakeText013 : String! = ""
+    var headacheImg011 : UIImageView! //タップ操作で配置されるimage変数　背面用
+    var headacheImg012 : UIImageView! //タップ操作で配置されるimage変数　側面用
     
     override func viewDidLoad() {
         super.viewDidLoad()

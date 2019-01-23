@@ -28,7 +28,9 @@ class ColorEdit: UIView {
         //HeadacheMake021何にあるheadacheImg021の値を取得して変換する必要あり。
         //hsvControl = HSV.fromRGB(red: 0, green: 255, blue: 0)
         
-        colorEditDelegate?.changeImageViewColor(color: UIColor.hsb(h:Int(hueEditSlider.value), s:Int(saturationEditSlider.value), b:Int(brightnessEditSlider.value), alpha: 1))
+        //colorEditDelegate?.changeImageViewColor(color: UIColor.hsb(h:Int(hueEditSlider.value), s:Int(saturationEditSlider.value), b:Int(brightnessEditSlider.value), alpha: 1))
+        
+        colorEditDelegate?.changeImageViewColor(color: UIColor.rgb(r:Int(hueEditSlider.value), g:Int(saturationEditSlider.value), b:Int(brightnessEditSlider.value), alpha: 1))
         
         //delegate?.changeImageViewColor(color: UIColor.rgb(r:Int(hueEditSlider.value), g:Int(saturationEditSlider.value), b:0, alpha: 1))
         //hsvControl = HSV.fromRGB(red: 0, green: 255, blue: 0)
@@ -42,7 +44,9 @@ class ColorEdit: UIView {
         print("DEBUG_PRINT: \(saturationEditSlider.value)")
         print("DEBUG_PRINT: \(saturationEdit)")
         
-        colorEditDelegate?.changeImageViewColor(color: UIColor.hsb(h:Int(hueEditSlider.value), s:Int(saturationEditSlider.value), b:Int(brightnessEditSlider.value), alpha: 1))
+        //colorEditDelegate?.changeImageViewColor(color: UIColor.hsb(h:Int(hueEditSlider.value), s:Int(saturationEditSlider.value), b:Int(brightnessEditSlider.value), alpha: 1))
+        
+        colorEditDelegate?.changeImageViewColor(color: UIColor.rgb(r:Int(hueEditSlider.value), g:Int(saturationEditSlider.value), b:Int(brightnessEditSlider.value), alpha: 1))
         
     }
     
@@ -50,12 +54,11 @@ class ColorEdit: UIView {
         brightnessEdit = brightnessEditSlider.value
         print("DEBUG_PRINT: \(brightnessEditSlider.value)")
         
-        colorEditDelegate?.changeImageViewColor(color: UIColor.hsb(h:Int(hueEditSlider.value), s:Int(saturationEditSlider.value), b:Int(brightnessEditSlider.value), alpha: 1))
+        //colorEditDelegate?.changeImageViewColor(color: UIColor.hsb(h:Int(hueEditSlider.value), s:Int(saturationEditSlider.value), b:Int(brightnessEditSlider.value), alpha: 1))
+        
+        colorEditDelegate?.changeImageViewColor(color: UIColor.rgb(r:Int(hueEditSlider.value), g:Int(saturationEditSlider.value), b:Int(brightnessEditSlider.value), alpha: 1))
         
     }
-    
-    
-    
     
     
     
@@ -76,6 +79,7 @@ class ColorEdit: UIView {
         loadFromNib()
     }
     
+    //ColorEdit.xibを追加する関数
     private func loadFromNib() {
     let ColorEditNib = UINib(nibName: "ColorEdit", bundle: Bundle(for: HeadacheMakeTextView.self)).instantiate(withOwner: self, options: nil)[0] as! UIView
         ColorEditNib.frame = self.bounds

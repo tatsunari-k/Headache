@@ -27,24 +27,28 @@ class HeadacheMake031: UIViewController {
         headMake031View.headMakeNo.text = headMakeNo031
         headMake031View.headMakeText.text = headMakeText031
         
-        scrollScreenWidth = headacheShapeScroll.frame.width //見える範囲設定
-        screenSize = headacheShapeScroll.bounds
-        
+        //画像の各情報を取得。以後、ページの貼付けやその親Viewの定義に利用
         let imageTop : UIImage = UIImage(named:img[0])!     //初期イメージ画像の設定
         pageNum = img.count                                 //ページ数番号を取得
         let num : CGFloat = CGFloat(integerLiteral: pageNum)  //CGFloat型へpageNumを変換。あとでもう少し調べて理解する。
         imageWidth = imageTop.size.width                      //画像の横設定画像の横幅から取得
         imageHeight = imageTop.size.height                    //画像の横設定画像の縦幅から取得
+        
+        //見える範囲のSize設定
+        screenSize = headacheShapeScroll.bounds
+        
+        //各Scrollページのサイズ
+        scrollScreenWidth = headacheShapeScroll.frame.width
         scrollScreenHeight = scrollScreenWidth * imageHeight/imageWidth //見えるスクロール画面の高さを画像サイズの縦横比と合わせる※必要?
         
+        //ページスクロールとするためにページ幅を合わせないといけない。
         //仮想サイズ01：スクロールページのサイズの設定　縦はheadacheShapeScrollと同じ。横はheadacheShapeScrollの×ページ数
         contentView.frame = CGRect(x:contentView.frame.origin.x, y:contentView.frame.origin.y, width:headacheShapeScroll.frame.size.width * num, height: headacheShapeScroll.frame.size.height)
         
-        //ページスクロールとするためにページ幅を合わせないといけない。
         //仮想サイズ02：スクロールビューのコンテンツサイズを指定
         headacheShapeScroll.contentSize = CGSize(width: headacheShapeScroll.frame.size.width * num,height: headacheShapeScroll.frame.size.height)
     
-        //ページ番号分、画像イメージを配置
+        //ページ番号分、画像イメージインスタンスを作成タグ付することでimageViewをtag管理
         for i in 0 ..< pageNum {
             // UIImageViewのインスタンス
             let image:UIImage = UIImage(named:img[i])!  //指定のUIimageを代入してインスタンス　番号を指定
@@ -53,7 +57,6 @@ class HeadacheMake031: UIViewController {
             var rect:CGRect = imageView.frame           //UIimaheViewのframeを取得
             rect.size.height = scrollScreenHeight       //imageViewのframeサイズをスクロール画面にセット
             rect.size.width = scrollScreenWidth         //imageViewのframeサイズをスクロール画面にセット
-            //imageView.frame = rect                      //ここの必要性不明初期のvar rectと役割がどう違う？不要らしい。
             imageView.tag = i + 1                       //ページを一枚先に送ってfor文繰り返し
             
             // UIScrollViewのインスタンスに画像を貼付ける
@@ -86,8 +89,8 @@ class HeadacheMake031: UIViewController {
                 }
             }
             // UIScrollViewのコンテンツサイズを画像のtotalサイズに合わせる
-            let nWidth:CGFloat = scrollScreenWidth * CGFloat(pageNum)
-            headacheShapeScroll.contentSize = CGSize(width: nWidth, height: scrollScreenHeight)
+            //let nWidth:CGFloat = scrollScreenWidth * CGFloat(pageNum)
+            //headacheShapeScroll.contentSize = CGSize(width: nWidth, height: scrollScreenHeight)
         }
 
     override func didReceiveMemoryWarning() {

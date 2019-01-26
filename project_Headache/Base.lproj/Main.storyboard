@@ -23,21 +23,29 @@
         <!--Item 2-->
         <scene sceneID="nKh-DR-z4j">
             <objects>
-                <viewController id="QlA-jB-2pW" sceneMemberID="viewController">
+                <viewController id="QlA-jB-2pW" customClass="HeadacheBookController" customModule="project_Headache" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tPZ-po-y9F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RUs-RL-s88">
-                                <rect key="frame" x="67" y="237" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RUs-RL-s88">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.91923777630000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="O5A-TP-39i" firstAttribute="trailing" secondItem="RUs-RL-s88" secondAttribute="trailing" id="JDp-ZU-0HS"/>
+                            <constraint firstItem="RUs-RL-s88" firstAttribute="top" secondItem="O5A-TP-39i" secondAttribute="top" id="KWN-Nh-7Sd"/>
+                            <constraint firstItem="O5A-TP-39i" firstAttribute="bottom" secondItem="RUs-RL-s88" secondAttribute="bottom" id="Wav-Fa-cFP"/>
+                            <constraint firstItem="RUs-RL-s88" firstAttribute="leading" secondItem="O5A-TP-39i" secondAttribute="leading" id="qug-Uh-PNd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="O5A-TP-39i"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="rbq-vP-wUE"/>
+                    <connections>
+                        <outlet property="headBookTableView" destination="RUs-RL-s88" id="Fdf-AE-oAK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Tw-wc-2JG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -261,6 +269,7 @@
                         <viewLayoutGuide key="safeArea" id="9CZ-YV-xeJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="vaV-Pp-Vnl">
+                        <barButtonItem key="backBarButtonItem" title="戻る" id="O4X-js-CEZ"/>
                         <barButtonItem key="rightBarButtonItem" title="次へ" id="BS1-VK-HxM">
                             <connections>
                                 <segue destination="sN8-7V-3xL" kind="show" id="s8X-hw-obN"/>
@@ -510,7 +519,7 @@
             </objects>
             <point key="canvasLocation" x="4192.8000000000002" y="1055.6221889055473"/>
         </scene>
-        <!--013-->
+        <!--Headache Make013-->
         <scene sceneID="a9X-VH-LQp">
             <objects>
                 <viewController storyboardIdentifier="HeadacheMake013" id="6GA-i4-WZ6" customClass="HeadacheMake013" customModule="project_Headache" customModuleProvider="target" sceneMemberID="viewController">
@@ -590,7 +599,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RyW-hU-DHg"/>
                     </view>
-                    <navigationItem key="navigationItem" title="013" id="pTf-AU-kfJ"/>
+                    <navigationItem key="navigationItem" id="pTf-AU-kfJ">
+                        <barButtonItem key="backBarButtonItem" title="戻る" id="d1f-Ag-x0E"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="headMake013View" destination="xYI-SD-tBQ" id="MhC-OI-maS"/>
                     </connections>
@@ -599,7 +610,7 @@
             </objects>
             <point key="canvasLocation" x="5048.8000000000002" y="1055.6221889055473"/>
         </scene>
-        <!--021-->
+        <!--Headache Make021-->
         <scene sceneID="HUH-qV-Mdh">
             <objects>
                 <viewController id="x3c-ax-FZh" customClass="HeadacheMake021" customModule="project_Headache" customModuleProvider="target" sceneMemberID="viewController">
@@ -655,7 +666,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TBd-s4-vqn"/>
                     </view>
-                    <navigationItem key="navigationItem" title="021" id="odN-PE-xNg">
+                    <navigationItem key="navigationItem" id="odN-PE-xNg">
+                        <barButtonItem key="backBarButtonItem" title="戻る" id="0Ar-Y3-SCH"/>
                         <barButtonItem key="rightBarButtonItem" title="次へ" id="uMQ-f4-Z0q">
                             <connections>
                                 <segue destination="llL-cO-DWS" kind="show" id="qbD-4Q-MyJ"/>
@@ -672,7 +684,7 @@
             </objects>
             <point key="canvasLocation" x="5919.1999999999998" y="1054.7226386806597"/>
         </scene>
-        <!--031-->
+        <!--Headache Make031-->
         <scene sceneID="Pm8-uZ-xmd">
             <objects>
                 <viewController storyboardIdentifier="HeadacheMake031" id="llL-cO-DWS" customClass="HeadacheMake031" customModule="project_Headache" sceneMemberID="viewController">
@@ -706,22 +718,6 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tvz-Kw-1JQ" userLabel="ContentView">
                                                 <rect key="frame" x="0.0" y="0.0" width="900" height="150"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gs4-fh-OzC">
-                                                        <rect key="frame" x="129" y="64" width="42" height="21"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOj-0y-htf">
-                                                        <rect key="frame" x="129" y="41" width="42" height="67"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="V5Z-oY-7ac"/>
                                                     <constraint firstAttribute="width" constant="900" id="dku-ak-7t3"/>
@@ -759,7 +755,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qwa-py-eRn"/>
                     </view>
-                    <navigationItem key="navigationItem" title="031" id="weY-xF-Ear">
+                    <navigationItem key="navigationItem" id="weY-xF-Ear">
+                        <barButtonItem key="backBarButtonItem" title="戻る" id="SqS-Qb-9en"/>
                         <barButtonItem key="rightBarButtonItem" title="次へ" id="PO9-0m-LaV">
                             <connections>
                                 <segue destination="AWu-H4-Pcp" kind="show" id="D0c-Ee-RmB"/>
@@ -776,7 +773,7 @@
             </objects>
             <point key="canvasLocation" x="6768.8000000000002" y="1054.7226386806597"/>
         </scene>
-        <!--Last-->
+        <!--Headache Make Last-->
         <scene sceneID="G1S-gg-plW">
             <objects>
                 <viewController id="AWu-H4-Pcp" customClass="HeadacheMakeLast" customModule="project_Headache" customModuleProvider="target" sceneMemberID="viewController">
@@ -799,7 +796,10 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhs-3X-mD3">
-                                <rect key="frame" x="100" y="228" width="175" height="30"/>
+                                <rect key="frame" x="100" y="312.5" width="175" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zhs-3X-mD3" secondAttribute="height" multiplier="35:6" id="Wgn-pC-rcU"/>
+                                </constraints>
                                 <state key="normal" title="完成"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -810,25 +810,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0w-9D-b9E">
-                                <rect key="frame" x="100" y="288" width="175" height="30"/>
-                                <state key="normal" title="やり直す"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaP-Tz-oq6">
-                                <rect key="frame" x="25" y="98" width="330" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">あなたの頭痛のイメージは完成しましたか？</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaP-Tz-oq6">
+                                <rect key="frame" x="81.5" y="214" width="212.5" height="38.5"/>
+                                <string key="text">あなたの頭痛の
+イメージは完成しましたか？</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -838,20 +823,20 @@
                         <constraints>
                             <constraint firstItem="K4p-Q3-rJm" firstAttribute="width" secondItem="P8c-bY-5Qa" secondAttribute="width" multiplier="2:5" id="0Sc-NP-GTT"/>
                             <constraint firstItem="K4p-Q3-rJm" firstAttribute="leading" secondItem="TJn-7q-0Db" secondAttribute="leading" constant="20" id="8HA-SL-a7c"/>
-                            <constraint firstItem="TJn-7q-0Db" firstAttribute="trailing" secondItem="i0w-9D-b9E" secondAttribute="trailing" constant="100" id="DPv-hU-0Lt"/>
-                            <constraint firstItem="i0w-9D-b9E" firstAttribute="top" secondItem="zhs-3X-mD3" secondAttribute="bottom" constant="30" id="EwY-gf-Di8"/>
                             <constraint firstItem="hpi-5n-d3X" firstAttribute="bottom" secondItem="K4p-Q3-rJm" secondAttribute="bottom" id="KjW-Ju-tNE"/>
-                            <constraint firstItem="i0w-9D-b9E" firstAttribute="leading" secondItem="TJn-7q-0Db" secondAttribute="leading" constant="100" id="Svg-Ia-Eol"/>
+                            <constraint firstItem="EaP-Tz-oq6" firstAttribute="centerX" secondItem="P8c-bY-5Qa" secondAttribute="centerX" id="QUh-Mc-Ovk"/>
+                            <constraint firstItem="K4p-Q3-rJm" firstAttribute="top" relation="lessThanOrEqual" secondItem="zhs-3X-mD3" secondAttribute="bottom" constant="130" id="UdR-41-Er9"/>
+                            <constraint firstItem="EaP-Tz-oq6" firstAttribute="top" secondItem="TJn-7q-0Db" secondAttribute="top" constant="150" id="YUy-1y-b8x"/>
                             <constraint firstItem="TJn-7q-0Db" firstAttribute="bottom" secondItem="hpi-5n-d3X" secondAttribute="bottom" id="bvL-aC-mdQ"/>
                             <constraint firstItem="TJn-7q-0Db" firstAttribute="trailing" secondItem="hpi-5n-d3X" secondAttribute="trailing" constant="20" id="es3-6h-KRX"/>
                             <constraint firstItem="zhs-3X-mD3" firstAttribute="leading" secondItem="TJn-7q-0Db" secondAttribute="leading" constant="100" id="gOS-gD-1gf"/>
-                            <constraint firstItem="K4p-Q3-rJm" firstAttribute="top" secondItem="i0w-9D-b9E" secondAttribute="bottom" constant="100" id="m0h-vC-rRb"/>
                             <constraint firstItem="TJn-7q-0Db" firstAttribute="trailing" secondItem="zhs-3X-mD3" secondAttribute="trailing" constant="100" id="mBe-Ea-31u"/>
                             <constraint firstItem="hpi-5n-d3X" firstAttribute="width" secondItem="P8c-bY-5Qa" secondAttribute="width" multiplier="2.3:5" id="mm0-je-H5Y"/>
+                            <constraint firstItem="zhs-3X-mD3" firstAttribute="top" secondItem="EaP-Tz-oq6" secondAttribute="bottom" constant="60" id="pOA-2d-IED"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TJn-7q-0Db"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Last" id="ExS-xo-enP"/>
+                    <navigationItem key="navigationItem" id="ExS-xo-enP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lu6-4A-SSi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

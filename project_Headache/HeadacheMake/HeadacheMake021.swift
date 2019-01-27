@@ -11,8 +11,6 @@ class HeadacheMake021: UIViewController {
     @IBOutlet weak var colorEditNib: ColorEdit!
     var headMakeNo021 : String! = ""//ページ番号
     var headMakeText021 : String! = ""//ページ説明テキスト
-
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +42,19 @@ class HeadacheMake021: UIViewController {
             self.colorEditNib.layer.shadowOffset = CGSize(width: 5, height: 5)
             
         }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("DEBUG_PRINT: seguepreoare021→031")
+        // segueから遷移先のHeadacheMake031を取得する
+        let headacheMake031:HeadacheMake031 = segue.destination as! HeadacheMake031
+        // 遷移先のHeadacheMake031で宣言しているcolor031に頭痛の設定値を代入して渡す
+        headacheMake031.color031 = headacheImg021.tintColor
+        print("DEBUG_PRINT: headacheImg021.tintColor\(headacheImg021.tintColor)")
+        // 遷移先のHeadacheMake031で宣言している○○に座標情報の値を代入して渡す
+        //
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

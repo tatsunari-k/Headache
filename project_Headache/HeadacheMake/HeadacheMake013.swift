@@ -19,8 +19,6 @@ class HeadacheMake013: UIViewController {
         
         headMake013View.headMakeNo.text = headMakeNo013
         headMake013View.headMakeText.text = headMakeText013
-        
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

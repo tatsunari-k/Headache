@@ -46,3 +46,9 @@ extension UIColor {
         return UIColor(hue: CGFloat(h) / 360.0, saturation: CGFloat(s) / 100.0,  brightness: CGFloat(b) / 100.0, alpha: 1)
     }
 }
+
+extension UIScrollView {
+    var currentPage: Int {
+        return Int((self.contentOffset.x + (0.5 * self.bounds.width)) / self.bounds.width) + 1
+    }
+}

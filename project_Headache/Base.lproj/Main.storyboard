@@ -29,7 +29,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RUs-RL-s88">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="505"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
@@ -715,24 +715,39 @@
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="headacheShapeScroll" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TFr-tK-M5f" userLabel="headacheShapeScroll">
                                         <rect key="frame" x="37" y="-3" width="300" height="150"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tvz-Kw-1JQ" userLabel="ContentView">
-                                                <rect key="frame" x="0.0" y="0.0" width="900" height="150"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="150" id="V5Z-oY-7ac"/>
-                                                    <constraint firstAttribute="width" constant="900" id="dku-ak-7t3"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
+                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="tvz-Kw-1JQ" secondAttribute="bottom" id="07D-eI-X5a"/>
-                                            <constraint firstAttribute="trailing" secondItem="tvz-Kw-1JQ" secondAttribute="trailing" id="6QK-Hs-Rh0"/>
                                             <constraint firstAttribute="height" constant="150" id="DJX-HP-i9B"/>
-                                            <constraint firstItem="tvz-Kw-1JQ" firstAttribute="leading" secondItem="TFr-tK-M5f" secondAttribute="leading" id="JTo-gS-Epr"/>
                                             <constraint firstAttribute="width" constant="300" id="kyq-P9-mVZ"/>
-                                            <constraint firstItem="tvz-Kw-1JQ" firstAttribute="top" secondItem="TFr-tK-M5f" secondAttribute="top" id="v21-r2-LK9"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </scrollView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vvt-lg-AHF">
+                                        <rect key="frame" x="300" y="103" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="＞">
+                                            <color key="titleColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextButtonIA:" destination="llL-cO-DWS" eventType="touchUpInside" id="YSj-1D-U7f"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oew-8O-otu">
+                                        <rect key="frame" x="40" y="94" width="31" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="＜">
+                                            <color key="titleColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backButtonIA:" destination="llL-cO-DWS" eventType="touchUpInside" id="JnX-zX-a8M"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -759,14 +774,16 @@
                         <barButtonItem key="backBarButtonItem" title="戻る" id="SqS-Qb-9en"/>
                         <barButtonItem key="rightBarButtonItem" title="次へ" id="PO9-0m-LaV">
                             <connections>
-                                <segue destination="AWu-H4-Pcp" kind="show" id="D0c-Ee-RmB"/>
+                                <segue destination="AWu-H4-Pcp" kind="show" id="pUx-G6-jP2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="contentView" destination="tvz-Kw-1JQ" id="IWS-xq-tjn"/>
+                        <outlet property="backButton" destination="oew-8O-otu" id="xej-l3-h8b"/>
                         <outlet property="headMake031View" destination="NK2-kU-C84" id="eAx-7e-CIx"/>
+                        <outlet property="headacheImg031" destination="8vn-6W-ao6" id="6qh-ab-wpH"/>
                         <outlet property="headacheShapeScroll" destination="TFr-tK-M5f" id="M1w-gW-nug"/>
+                        <outlet property="nextButton" destination="Vvt-lg-AHF" id="cC6-DN-lPi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SPo-dL-7FR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -809,6 +826,10 @@
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="makeFinButtonIA:" destination="AWu-H4-Pcp" eventType="touchUpInside" id="NPD-Lz-9gN"/>
+                                    <segue destination="Ecn-2n-Kcb" kind="show" id="cuc-4F-brp"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaP-Tz-oq6">
                                 <rect key="frame" x="81.5" y="214" width="212.5" height="38.5"/>
@@ -837,6 +858,9 @@
                         <viewLayoutGuide key="safeArea" id="TJn-7q-0Db"/>
                     </view>
                     <navigationItem key="navigationItem" id="ExS-xo-enP"/>
+                    <connections>
+                        <outlet property="makeFinButtonIB" destination="zhs-3X-mD3" id="JvB-UN-xYL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lu6-4A-SSi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
